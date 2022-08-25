@@ -1,0 +1,149 @@
+/*Começar importando a fonte do google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /*font-family: 'Montserrat', sans-serif;*/
+
+/*retirando a margem a aplicando a fonte*/
+body{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Montserrat';
+}
+
+/*ESTILIZANDO A NAVBAR*/
+
+.navbar{
+    /*fixando a navbar no topo da pagina*/
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    background-color: #FFF;
+}
+
+/*tag float para cancelar a quebra de linha da div e alinhar a ul e a logo aos cantos*/
+.navbar .menunav .logo{
+    height: 80px;
+    width: 489px;
+    float: left;
+    padding-left: 130px;
+    margin-top: 36px;
+}
+.navbar .menunav .itensnav{
+    width: 730px;
+    float: right;
+}
+/*estilizando e posicionando os itens da lista*/
+.navbar .menunav .itensnav ul{
+    list-style-type: none;
+}
+/*posicionando ao lado com float(cancela a quebra de linha do div)*/
+.navbar .menunav .itensnav ul li{
+    float: left;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+/*re-estilizando a tag a*/
+.navbar .menunav .itensnav ul li a{
+    color: #222;
+    text-decoration: none;
+    padding: 10px;
+}
+/*efeito ao passar o mouse*/
+.navbar .menunav .itensnav ul li a:hover{
+    background-color: rgba(180, 180, 180, 0.2)
+}
+/*FIM DA NAVBAR*/
+.navbar .limpar-float{
+    clear: both;
+}
+/*INTRODUÇÃO*/
+
+.intro{
+    text-align: center; /*alinhando todos os itens da div no centro*/
+}
+
+.intro .foto{
+    padding-top: 110px; /*colocando a imagem abaixo da navbar*/
+}
+.intro .foto img{
+    height: 28%;
+    width: 28%;
+    border-radius: 50%; /*deixando a imagem com a borda circular*/
+       
+}
+/*FIM INTRO*/
+
+/*SOBRE MIM INICIO*/
+
+.sobre{
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 265px;
+    margin-top: 50px;
+}
+.sobre h1{
+    margin-right: 1260px;
+}
+.sobre .texto{
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: left;
+}
+/*SOBRE MIM FIM*/
+
+/*CAPACIDADES INICIO*/
+.capacidades{
+    text-align: center;
+}
+.capacidades .listacap{
+  /*grid de imagens*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*divide a grid em 3 colunas colocando as 3 com tamanho de 1fr(fração)*/
+  grid-gap: 40px; /*coloca em 40px o espaço entre os elementos da grid*/
+  
+  /*centralizando a grid*/
+  margin: auto;
+  max-width: 1100px;
+  justify-content: center;
+  margin-right: 300px;
+}
+.capacidades h2{
+    font-size: 35px;
+    margin-right: 80px;
+    margin-bottom: 60px;
+}
+/*CAPACIDADES FIM*/
+
+/*PROJETOS INICIO*/
+
+.projetos{
+    margin-left: 180px;
+}
+.projetos img{
+    float: left;
+}
+.projetos img{
+    border-radius: 15%; /*arredonda os cantos*/
+
+    filter: drop-shadow(10px 10px 30px #011035); /*efeito de sombra (H V Blur Cor)*/
+}
+
+.projetos .git-link{
+    margin-top: 155px;
+}
+
+.projetos .git-link a{
+    margin-left: 60px;
+
+    /*estilizando o link*/
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.projetos .git-link a:hover{
+    /*link quando se passa o mouse*/
+    text-decoration: underline;
+    color: blue;
+}
