@@ -69,7 +69,8 @@ body{
 .intro .foto img{
     height: 28%;
     width: 28%;
-    border-radius: 50%; /*deixando a imagem com a borda circular*/   
+    border-radius: 50%; /*deixando a imagem com a borda circular*/
+       
 }
 /*FIM INTRO*/
 
@@ -117,8 +118,59 @@ body{
 /*PROJETOS INICIO*/
 
 .projetos{
-    margin-left: 35px;
+    margin-left: 180px;
 }
 .projetos img{
     float: left;
+}
+.projetos img{
+    border-radius: 15%; /*arredonda os cantos*/
+
+    filter: drop-shadow(10px 10px 30px #011035); /*efeito de sombra (H V Blur Cor)*/
+}
+
+.projetos .git-link{
+    margin-top: 155px;
+}
+
+.projetos .git-link a{
+    margin-left: 60px;
+
+    /*estilizando o link*/
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.projetos .git-link a:hover{
+    /*link quando se passa o mouse*/
+    text-decoration: underline;
+    color: blue;
+}
+/*PROJETOS FIM*/
+
+/*FOOTER INICIO*/
+
+footer{
+    text-align: center;
+}
+footer h4{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+footer a{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-inline: 25px;
+}
+footer a:hover{
+    background-color: #BCBCBC;
+    color: white;
+}
+footer p{
+    margin-top: 30px;
 }
